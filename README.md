@@ -6,3 +6,8 @@ A simple Vigenere en/de-ciphering script
 -Now type the commands in terminal
 `*To encipher - 'encipher *filename*'
   *To decipher - 'decipher *filename*'
+
+for file in x/*;
+do t=$(basename $file .md);
+encipher $file $t;
+done
